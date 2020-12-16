@@ -1,0 +1,66 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 35px 70px;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+nav li{
+    padding-left: 70px;
+}
+nav a{
+    padding-top: 32px;
+    text-decoration: none;
+    color: black;
+}
+nav a:hover, nav a:focus{
+    color: var(--color_primary);
+    font-weight: bold;
+    border-top: 3px solid var(--color_primary);
+}
+#register a, #responsive_register{
+    color: var(--color_primary);
+    font-weight: bold;
+}
+#responsive_register{
+    display: none;
+}
+
+
+
+/*---------------PHONE DESIGN---------------*/
+@media screen and (min-width: 320px) and (max-width: 767px){
+    header{
+        flex-direction: column;
+        margin: 20px 0px;
+    }
+    #header_reponsive{
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 25px;
+    }
+    nav li{
+        padding: 0px 0px 10px 0px;
+        border-bottom: 3px solid #EDEDED;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    nav li:focus{
+        font-weight: bold;
+        border-bottom: 3px solid var(--color_primary);
+    }
+    nav a:focus, nav a:hover{
+        border-top: none;
+    }
+    #responsive_register{
+        text-decoration: none;
+        padding-top: 18px;
+        display: inline;
+    }
+    #register{
+        display: none;
+    }
+}

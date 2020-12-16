@@ -1,3 +1,45 @@
-body{
-    font-family: 'Raleway', sans-serif;
+
+
+/*------HEADER/NAVBAR------*/
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 22px;
+}
+/*#logo{
+    margin-left: 70px;
+}*/
+#register{
+    color: #0065FC;
+    font-weight: bold;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+nav li{
+    padding-left: 70px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    padding-top: 43px;
+}
+nav a:hover, nav a:focus{
+    color: #0065FC;
+    border-top: 3px solid #0065FC;
+}
+
+/*------SEARCH SECTION------*/
+#titles{
+    margin: 30px 0px 15px;
+}
+
+#titles h1, #titles h4{
+    /*margin-left: 70px;*/
+    margin-bottom: 0px;
+    margin-top: 0px;   
+}
+#titles h4{
+    font-weight: lighter;
 }
