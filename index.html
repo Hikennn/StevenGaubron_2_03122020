@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/index.css">-->
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/search_section.css">
     <!-- FONTS AWESOME -->
     <link rel="stylesheet" href="css/all.min.css">
     <!-- Google fonts -->
@@ -32,28 +33,53 @@
             </nav>
         </header>
 
-        <!--<section>
-            <div id="titles">
+        <section id="search_section">
+            <div id="title">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <h4>En plein centre ville ou en pleine nature</h4>
+                <p>En plein centre ville ou en pleine nature</p>
             </div>
-            <div id="search_section">
-                <form action="post">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <input type="search" name="" id="">
-                    Rechercher
+            <div id="search_container">
+                <form action="post" id="search_form">
+                    <span class="fas fa-map-marker-alt" id="pin_icon"></span>
+                    <input type="search" name="" placeholder="Marseille, France" id="searchbar"><span></span>
+                    <input type="submit" value="Rechercher" id="search_btn">
                 </form>
                 <ul id="filters">
-                    <li><i class="fas fa-money-bill-wave"></i>Économique</li>
-                    <li><i class="fas fa-child"></i>Familial</li>
-                    <li><i class="fas fa-heart"></i>Romantique</li>
-                    <li><i class="fas fa-dog"></i>Animaux autorisés</li>
+                    <h4>Filtres</h4>
+                    <li>
+                        <input type="checkbox" id="economy" name="economy">
+                        <label for="economy">
+                            <i class="fas fa-money-bill-wave filters_icon"></i>
+                            <span class="filter_name">Économique</span>
+                        </label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="family" name="family">
+                        <label for="family">
+                            <i class="fas fa-child filters_icon"></i>
+                            <span class="filter_name">Familial</span>
+                        </label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="romantic" name="romantic">
+                        <label for="romantic">
+                            <i class="fas fa-heart filters_icon"></i>
+                            <span class="filter_name">Romantique</span>
+                        </label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="animals" name="animals">
+                        <label for="animals">
+                            <i class="fas fa-dog filters_icon"></i>
+                            <span class="filter_name">Animaux autorisés</span>
+                        </label>
+                    </li>
                 </ul>
             </div>
-            <p><i class="fas fa-info-circle"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+            <p><i class="fas fa-info" id="info_icon"></i>Plus de 500 logements sont disponibles dans cette ville</p>
         </section>
 
-        <section id="accommodation_section">
+        <!--<section id="accommodation_section">
 
             <h1>Hébergements à Marseille</h1>
             <article id="accommodation_cards">               
