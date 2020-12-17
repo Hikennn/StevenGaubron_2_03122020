@@ -1,0 +1,47 @@
+footer{
+    background-color: var(--color_background);
+    display: flex;
+    padding: 50px;
+}
+footer h2{
+    padding-bottom: 10px;
+}
+footer ul{
+    padding-right: 300px;
+}
+footer li{
+    list-style-type: none;
+    padding-bottom: 10px;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+
+/*---------------PHONE DESIGN---------------*/
+@media screen and (min-width: 320px) and (max-width: 767px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+    footer ul{
+        padding-right: 0px;
+    }
+}
+
+
+
+/*---------------TABLET DESIGN---------------*/
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    footer{
+        display: flex;
+        justify-content: space-around;
+    }
+    footer ul{
+        padding-right: 0px;
+    }
+}
