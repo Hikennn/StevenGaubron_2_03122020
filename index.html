@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/logo/Reservia.svg">
-    <!-- ALL CSS 
-    <link rel="stylesheet" href="css/index.css">-->
+    <!-- ALL CSS -->
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/search_section.css">
     <link rel="stylesheet" href="css/accomodation_section.css">
+    <link rel="stylesheet" href="css/activities_section.css">
     <!-- FONTS AWESOME -->
     <link rel="stylesheet" href="css/all.min.css">
     <!-- Google fonts -->
@@ -192,60 +192,65 @@
             </aside>
         </section>
 
-        <!--<section id="activities_section">
-            <h1>Activités à Marseille</h1>
-            <div id="activities">
-                <article class="activities_card">
+        <section id="activities_section">
+            <div id="activities_container">
+                <h2 id="activities_title">Activités à Marseille</h2>
+                <div id="activities_card">
                     <a href="#">
-                        <div>
-                            <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
-                            <h1>Vieux Port</h1>
-                        </div>
+                        <figure class="activities_card">
+                            <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Photo Vieux Port" class="activities_card_image">
+                            <figcaption class="activities_card_infos">
+                                <h3>Vieux Port</h3>
+                            </figcaption>
+                        </figure>
                     </a>
-                </article>
-                <article class="activities_card">
+                    <div class="double_card">
+                        <a href="#">
+                            <figure class="small_activities_card">
+                                <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Photo Fort de Pomègues" class="small_activities_card_image">
+                                <figcaption class="activities_card_infos">
+                                    <h3>Fort de Pomègues</h3>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a href="#">
+                            <figure class="small_activities_card">
+                                <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Photo Îles du Frioul" class="small_activities_card_image">
+                                <figcaption class="activities_card_infos">
+                                    <h3>Îles du Frioul</h3>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
                     <a href="#">
-                        <div>
-                            <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
-                            <h1>Fort de Poguèmes</h1>
-                        </div>
+                        <figure class="activities_card">
+                            <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Photo Parc national des Calanques" class="activities_card_image">
+                            <figcaption class="activities_card_infos">
+                                <h3>Parc national des Calanques</h3>
+                            </figcaption>
+                        </figure>
                     </a>
-                </article>
-                <article class="activities_card">
-                    <a href="#">
-                        <div>
-                            <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="">
-                            <h1>Îles du Frioul</h1>
-                        </div>
-                    </a>
-                </article>
-                <article class="activities_card">
-                    <a href="#">
-                        <div>
-                            <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
-                            <h1>Parc National des Calanques</h1>
-                        </div>
-                    </a>
-                </article>
-                <article class="activities_card">
-                    <a href="#">
-                        <div>
-                            <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
-                            <h1>Notre-Dame-de-la-Garde</h1>
-                        </div>
-                    </a>
-                </article>
-                <article class="activities_card">
-                    <a href="#">
-                        <div>
-                            <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
-                            <h1>Parc Longchamp</h1>
-                        </div>
-                    </a>
-                </article>
+                    <div class="double_card">
+                        <a href="#">
+                            <figure class="small_activities_card">
+                                <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Photo Notre-Dame-de-la-Garde" class="small_activities_card_image">
+                                <figcaption class="activities_card_infos">
+                                    <h3>Notre-Dame-de-la-Garde</h3>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a href="#">
+                            <figure class="small_activities_card">
+                                <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Photo Parc Longchamp" class="small_activities_card_image">
+                                <figcaption class="activities_card_infos">
+                                    <h3>Parc Longchamp</h3>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </section>-->
-
+        </section>
     </main>
 
     <!--<footer>

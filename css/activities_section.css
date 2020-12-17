@@ -1,0 +1,92 @@
+/*---------------GLOBAL---------------*/
+#activities_section a{
+    text-decoration: none;
+    color: black;
+}
+.activities_card:hover, .small_activities_card:hover{
+    transform: scale(1.1);
+}
+#activities_title{
+    margin: 20px 80px;
+}
+
+
+
+/*---------------ACTIVITIES---------------*/
+#activities_card{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+}
+.activities_card{
+    width: 410px;
+    margin: 20px;
+    border-radius: 30px;
+    box-shadow: 2px 5px 24px -8px rgba(0,0,0,0.57);
+    transition: .2s ease;
+}
+.activities_card_image{
+    height: 400px;
+    width: 100%;
+    border-radius: 30px 30px 0px 0px;
+}
+.activities_card_infos{
+    padding: 15px;
+}
+
+
+
+/*---------------SMALL ACTIVITIES---------------*/
+.small_activities_card{
+    width: 410px;
+    max-width: 100%;
+    background-color: white;
+    margin: 20px;
+    border-radius: 25px;
+    box-shadow: 2px 5px 24px -8px rgba(0,0,0,0.57);
+    transition: .2s ease;
+}
+.small_activities_card_image{
+    height: 162px;
+    width: 100%;
+    border-radius: 25px 25px 0px 0px;
+}
+
+
+
+/*---------------PHONE DESIGN---------------*/
+@media screen and (min-width: 320px) and (max-width: 767px){
+    #activities_title{
+        margin: 20px 25px;
+    }
+    #activities_card{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .activities_card{
+        width: auto;
+        margin: 20px;
+    }
+    .small_activities_card{
+        width: auto;
+        margin: 20px;
+    }
+}
+/*---------------TABLET DESIGN---------------*/
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    #activities_card{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+/*---------------DESKTOP DESIGN---------------*/
+@media screen and (min-width: 1200px) and (max-width: 1879px){
+    #activities_card{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        margin: 20px 50px;
+    }
+}
