@@ -26,6 +26,7 @@
     transition: .2s ease;
 }
 .activities_card_image{
+    object-fit: cover;
     height: 400px;
     width: 100%;
     border-radius: 30px 30px 0px 0px;
@@ -47,6 +48,7 @@
     transition: .2s ease;
 }
 .small_activities_card_image{
+    object-fit: cover;
     height: 162px;
     width: 100%;
     border-radius: 25px 25px 0px 0px;

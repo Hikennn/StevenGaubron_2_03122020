@@ -8,6 +8,7 @@
     margin: 0px;
     padding: 0px;
 }
-body{
+html, body{
     font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
 }

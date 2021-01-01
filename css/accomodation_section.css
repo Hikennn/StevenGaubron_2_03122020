@@ -49,6 +49,7 @@
     transition: .2s ease;
 }
 .card_image{
+    object-fit: cover;
     height: 150px;
     width: 100%;
     border-radius: 10% 10% 0% 0%;
@@ -80,6 +81,7 @@
     transition: .2s ease;
 }
 .popular_card_image{
+    object-fit: cover;
     height: 170px;
     width: 170px;
     border-radius: 10% 0% 0% 10%;

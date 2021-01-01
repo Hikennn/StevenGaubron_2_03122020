@@ -3,6 +3,12 @@ header{
     justify-content: space-between;
     margin: 35px 70px;
 }
+#logo{
+    transition: .2s ease;
+}
+#logo:hover{
+    transform: scale(1.1);
+}
 nav ul{
     display: flex;
     list-style-type: none;

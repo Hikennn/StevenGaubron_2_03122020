@@ -36,11 +36,9 @@
     max-width: 50%;
     margin: 20px 0px;
 }
-#filters h4{
-    padding: 15px 0px;
-}
 #filters li{
     list-style-type: none;
+    margin-right: 20px;
 }
 #economy, #family, #romantic, #animals{
     display: none;
@@ -74,6 +72,12 @@
     border: 2px solid var(--color_background);
     border-radius: 50%;
 }
+#filters_selection{
+    display: flex;
+}
+h4{
+    margin: 0px 20px;
+}
 
 
 
@@ -85,7 +89,10 @@
     #title{
         font-size: smaller;
     }
-    #search_btn{
+    /*#search_btn{
+        display: none;
+    }*/
+    #search_word{
         display: none;
     }
     input#searchbar + span::after{
@@ -117,16 +124,22 @@
         max-width: 100%;
         margin: 20px 0px;
     }
+    #search_icon{
+        display: none;
+    }
 }
 
 
 
-/*---------------TABLET DESIGN---------------*/
+/*---------------DESKTOP DESIGN---------------*/
 @media screen and (min-width: 1200px) and (max-width: 1920px){
     #filters{
         display: flex;
         flex-wrap: wrap;
         max-width: 50%;
         margin: 20px 0px;
+    }
+    #search_icon{
+        display: none;
     }
 }
